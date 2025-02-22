@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import {
@@ -25,17 +26,17 @@ export function Hero() {
     {
       title: "Link de Internet Temporário",
       description: "Soluções de conectividade para eventos com diversas opções: Rádio, Fibra Ótica, Mochilink 5G e Starlink",
-      image: "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?q=80&w=2073&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1740&auto=format&fit=crop"
     },
     {
       title: "Serviço de Backup em Nuvem",
       description: "Proteção de dados em dois Data Centers nacionais",
-      image: "https://images.unsplash.com/photo-1623282033815-40b05d96c903?q=80&w=2940&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?q=80&w=2073&auto=format&fit=crop"
     },
     {
       title: "Locação de Equipamentos",
       description: "Tablets, notebooks, impressoras, painéis LED e geradores para seus eventos",
-      image: "https://images.unsplash.com/photo-1595750462190-da85c3e1c0a4?q=80&w=1740&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1588508065123-287b28e013da?q=80&w=1287&auto=format&fit=crop"
     },
     {
       title: "Soluções Empresariais",
