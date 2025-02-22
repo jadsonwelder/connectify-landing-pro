@@ -28,7 +28,7 @@ export function Navbar() {
           <div className="flex items-center">
             <a href="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/0f01f18d-b5f7-4e62-b976-e5919131e8ed.png" 
+                src="/lovable-uploads/3b92ab79-ab6a-47ca-a790-be2f9f8a8305.png" 
                 alt="Inovação Telecom" 
                 className="h-8"
               />

@@ -5,9 +5,13 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">
-              Inovação Telecom
-            </h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/3b92ab79-ab6a-47ca-a790-be2f9f8a8305.png" 
+                alt="Inovação Telecom" 
+                className="h-8"
+              />
+            </div>
             <p className="text-sm">
               Soluções inovadoras em telecomunicações para sua empresa.
             </p>
