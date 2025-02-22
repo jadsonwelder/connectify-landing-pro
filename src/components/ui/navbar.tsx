@@ -19,14 +19,14 @@ export function Navbar() {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-md shadow-sm"
+          ? "bg-secondary/80 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-bold text-primary">
+            <a href="/" className="text-2xl font-bold text-white">
               Inovação Telecom
             </a>
           </div>
@@ -34,19 +34,19 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#servicos"
-              className="text-gray-700 hover:text-primary transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               Serviços
             </a>
             <a
               href="#sobre"
-              className="text-gray-700 hover:text-primary transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               Sobre
             </a>
             <a
               href="#contato"
-              className="text-gray-700 hover:text-primary transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               Contato
             </a>
@@ -56,7 +56,7 @@ export function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 p-2"
+              className="text-white p-2"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -67,19 +67,19 @@ export function Navbar() {
           <div className="md:hidden pb-6 animate-fade-down">
             <a
               href="#servicos"
-              className="block py-2 text-gray-700 hover:text-primary"
+              className="block py-2 text-gray-300 hover:text-white"
             >
               Serviços
             </a>
             <a
               href="#sobre"
-              className="block py-2 text-gray-700 hover:text-primary"
+              className="block py-2 text-gray-300 hover:text-white"
             >
               Sobre
             </a>
             <a
               href="#contato"
-              className="block py-2 text-gray-700 hover:text-primary"
+              className="block py-2 text-gray-300 hover:text-white"
             >
               Contato
             </a>
