@@ -1,6 +1,13 @@
 
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export function Hero() {
   const features = [
@@ -8,6 +15,24 @@ export function Hero() {
     "Planos para todos os perfis",
     "Suporte técnico eficiente",
     "Conexão que cabe no seu orçamento"
+  ];
+
+  const slides = [
+    {
+      title: "Conexão de Alta Performance",
+      description: "Internet fibra ótica com velocidade e estabilidade",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1744&auto=format&fit=crop"
+    },
+    {
+      title: "Soluções Empresariais",
+      description: "Infraestrutura completa para sua empresa",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
+      title: "Suporte Especializado",
+      description: "Equipe técnica disponível 24/7",
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1740&auto=format&fit=crop"
+    }
   ];
 
   return (
@@ -23,7 +48,41 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
+          {/* Carrossel */}
+          <div className="mb-16">
+            <Carousel 
+              opts={{
+                align: "start",
+                loop: true
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {slides.map((slide, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative h-[400px] rounded-2xl overflow-hidden">
+                      <div className="absolute inset-0">
+                        <img 
+                          src={slide.image} 
+                          alt={slide.title}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                      </div>
+                      <div className="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 className="text-3xl font-bold mb-2">{slide.title}</h3>
+                        <p className="text-lg text-gray-200">{slide.description}</p>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+
           <div className="text-center mb-12">
             <img 
               src="/lovable-uploads/ea88266a-a307-4b60-a9bb-3ac9d02bd13a.png" 
