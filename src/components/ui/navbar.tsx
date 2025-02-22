@@ -26,8 +26,12 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-bold text-white">
-              Inovação Telecom
+            <a href="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/0f01f18d-b5f7-4e62-b976-e5919131e8ed.png" 
+                alt="Inovação Telecom" 
+                className="h-8"
+              />
             </a>
           </div>
 
