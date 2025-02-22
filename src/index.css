@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -58,32 +59,26 @@
   background: 
     linear-gradient(90deg, 
       transparent 0%, 
-      rgba(0, 150, 255, 0.05) 45%, 
-      rgba(0, 150, 255, 0.1) 50%, 
-      rgba(0, 150, 255, 0.05) 55%, 
+      rgba(0, 150, 255, 0.02) 45%, 
+      rgba(0, 150, 255, 0.05) 50%, 
+      rgba(0, 150, 255, 0.02) 55%, 
       transparent 100%),
-    linear-gradient(-90deg, 
+    linear-gradient(45deg, 
       transparent 0%, 
-      rgba(0, 150, 255, 0.05) 45%, 
-      rgba(0, 150, 255, 0.1) 50%, 
-      rgba(0, 150, 255, 0.05) 55%, 
-      transparent 100%),
-    linear-gradient(0deg, 
-      transparent 0%, 
-      rgba(0, 150, 255, 0.05) 45%, 
-      rgba(0, 150, 255, 0.1) 50%, 
-      rgba(0, 150, 255, 0.05) 55%, 
+      rgba(0, 150, 255, 0.02) 45%, 
+      rgba(0, 150, 255, 0.05) 50%, 
+      rgba(0, 150, 255, 0.02) 55%, 
       transparent 100%);
-  background-size: 200% 200%;
-  animation: light-trails 8s linear infinite;
-  transform: rotate(45deg);
+  background-size: 300% 300%;
+  animation: light-trails 12s linear infinite;
+  transform: rotate(30deg);
 }
 
 @keyframes light-trails {
   0% {
-    background-position: 200% 200%, -200% -200%, -200% 200%;
+    background-position: 200% 200%, 200% 200%;
   }
   100% {
-    background-position: -200% -200%, 200% 200%, 200% -200%;
+    background-position: -200% -200%, -200% -200%;
   }
 }

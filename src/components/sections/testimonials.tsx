@@ -1,3 +1,4 @@
+
 export function Testimonials() {
   const testimonials = [
     {
@@ -21,12 +22,8 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="depoimentos" className="relative py-20 bg-white overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="fiber-lines"></div>
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="depoimentos" className="relative py-20 bg-white">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           O Que Nossos Clientes Dizem
         </h2>
