@@ -31,12 +31,12 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/termos" className="hover:text-white transition-colors">
+                <a href="/terms" className="hover:text-white transition-colors">
                   Termos de Uso
                 </a>
               </li>
               <li>
-                <a href="/privacidade" className="hover:text-white transition-colors">
+                <a href="/privacy" className="hover:text-white transition-colors">
                   Política de Privacidade
                 </a>
               </li>

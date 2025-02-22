@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import {
@@ -26,12 +25,12 @@ export function Hero() {
     {
       title: "Link de Internet Temporário",
       description: "Soluções de conectividade para eventos com diversas opções: Rádio, Fibra Ótica, Mochilink 5G e Starlink",
-      image: "https://images.unsplash.com/photo-1521919419609-24374583f83b?q=80&w=1740&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?q=80&w=2073&auto=format&fit=crop"
     },
     {
       title: "Serviço de Backup em Nuvem",
       description: "Proteção de dados em dois Data Centers nacionais",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1934&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1623282033815-40b05d96c903?q=80&w=2940&auto=format&fit=crop"
     },
     {
       title: "Locação de Equipamentos",
@@ -50,8 +49,12 @@ export function Hero() {
     }
   ];
 
-  const handleWhatsApp = () => {
-    window.open('https://wa.me/5511947094934', '_blank');
+  const handleCTAClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const ctaSection = document.getElementById('cta');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -129,6 +132,7 @@ export function Hero() {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-white"
+              onClick={handleCTAClick}
             >
               Saiba Mais
             </Button>

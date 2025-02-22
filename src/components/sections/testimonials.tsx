@@ -1,4 +1,3 @@
-
 export function Testimonials() {
   const testimonials = [
     {
@@ -22,7 +21,20 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 bg-white">
+    <section id="depoimentos" className="relative py-20 bg-white overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `url(${"/lovable-uploads/9f241114-f30c-4d98-a080-d1ae1a1ea87e.png"})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(5px)',
+            animation: 'wave 8s infinite linear'
+          }}
+        />
+      </div>
+
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           O Que Nossos Clientes Dizem
