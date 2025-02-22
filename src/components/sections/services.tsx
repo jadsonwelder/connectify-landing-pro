@@ -48,7 +48,7 @@ const services = [
       },
       {
         title: "Consultoria para Provedores",
-        description: "Serviços de valuation, due diligence e intermediação para venda ou compra de blocos de IPs.",
+        description: "Serviços de valuation, due diligence e intermediação para venda ou compra de ISPs, Operadores de Telecom e blocos de IPs.",
         icon: Users,
       },
     ],
@@ -56,6 +56,14 @@ const services = [
 ];
 
 export function Services() {
+  const handleCTAClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const ctaSection = document.getElementById('cta');
+    if (ctaSection) {
+      ctaSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="servicos" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -85,7 +93,11 @@ export function Services() {
                     </div>
                     <h4 className="text-xl font-semibold mb-2">{service.title}</h4>
                     <p className="text-gray-600 mb-4">{service.description}</p>
-                    <Button variant="outline" className="w-full">
+                    <Button 
+                      variant="outline" 
+                      className="w-full"
+                      onClick={handleCTAClick}
+                    >
                       Saiba mais
                     </Button>
                   </div>

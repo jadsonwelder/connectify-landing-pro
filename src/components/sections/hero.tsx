@@ -26,22 +26,22 @@ export function Hero() {
     {
       title: "Link de Internet Temporário",
       description: "Soluções de conectividade para eventos com diversas opções: Rádio, Fibra Ótica, Mochilink 5G e Starlink",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1740&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1521919419609-24374583f83b?q=80&w=1740&auto=format&fit=crop"
     },
     {
       title: "Serviço de Backup em Nuvem",
       description: "Proteção de dados em dois Data Centers nacionais",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1740&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1934&auto=format&fit=crop"
     },
     {
       title: "Locação de Equipamentos",
       description: "Tablets, notebooks, impressoras, painéis LED e geradores para seus eventos",
-      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1740&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1595750462190-da85c3e1c0a4?q=80&w=1740&auto=format&fit=crop"
     },
     {
       title: "Soluções Empresariais",
       description: "Infraestrutura completa para sua empresa",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1740&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?q=80&w=1740&auto=format&fit=crop"
     },
     {
       title: "Suporte Especializado",
@@ -49,6 +49,10 @@ export function Hero() {
       image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1740&auto=format&fit=crop"
     }
   ];
+
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/5511947094934', '_blank');
+  };
 
   return (
     <section className="relative min-h-screen flex items-center bg-hero-gradient overflow-hidden">
@@ -96,14 +100,6 @@ export function Hero() {
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
             </Carousel>
-          </div>
-
-          <div className="text-center mb-12">
-            <img 
-              src="/lovable-uploads/ea88266a-a307-4b60-a9bb-3ac9d02bd13a.png" 
-              alt="Inovação Telecom" 
-              className="w-48 mx-auto mb-8"
-            />
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white text-center mb-8">

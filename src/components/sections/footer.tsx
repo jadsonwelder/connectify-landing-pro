@@ -3,7 +3,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="mb-4">
               <img 
@@ -15,32 +15,6 @@ export function Footer() {
             <p className="text-sm">
               Soluções inovadoras em telecomunicações para sua empresa.
             </p>
-          </div>
-          
-          <div>
-            <h4 className="text-white font-semibold mb-4">Links Rápidos</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#sobre" className="hover:text-white transition-colors">
-                  Sobre nós
-                </a>
-              </li>
-              <li>
-                <a href="#servicos" className="hover:text-white transition-colors">
-                  Serviços
-                </a>
-              </li>
-              <li>
-                <a href="#blog" className="hover:text-white transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#contato" className="hover:text-white transition-colors">
-                  Contato
-                </a>
-              </li>
-            </ul>
           </div>
           
           <div>

@@ -15,6 +15,13 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/5511947094934', '_blank');
+  };
+
+  const buttonClass = "relative group overflow-hidden hover:scale-105 transition-transform duration-300";
+  const pulseClass = "after:content-[''] after:absolute after:inset-0 after:rounded-lg after:border-2 after:border-primary/50 after:animate-ping after:opacity-75";
+
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -43,18 +50,24 @@ export function Navbar() {
               Serviços
             </a>
             <a
-              href="#sobre"
+              href="#depoimentos"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              Sobre
+              Casos de Sucesso
             </a>
             <a
-              href="#contato"
+              href="#cta"
               className="text-gray-300 hover:text-white transition-colors"
             >
               Contato
             </a>
-            <Button variant="default">Solicite uma Consultoria</Button>
+            <Button 
+              variant="default"
+              onClick={handleWhatsApp}
+              className={`${buttonClass} ${pulseClass}`}
+            >
+              Falar com Consultor
+            </Button>
           </div>
 
           <div className="md:hidden">
@@ -76,19 +89,23 @@ export function Navbar() {
               Serviços
             </a>
             <a
-              href="#sobre"
+              href="#depoimentos"
               className="block py-2 text-gray-300 hover:text-white"
             >
-              Sobre
+              Casos de Sucesso
             </a>
             <a
-              href="#contato"
+              href="#cta"
               className="block py-2 text-gray-300 hover:text-white"
             >
               Contato
             </a>
-            <Button variant="default" className="w-full mt-4">
-              Solicite uma Consultoria
+            <Button 
+              variant="default" 
+              onClick={handleWhatsApp}
+              className={`w-full mt-4 ${buttonClass} ${pulseClass}`}
+            >
+              Falar com Consultor
             </Button>
           </div>
         )}
