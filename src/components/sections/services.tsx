@@ -1,3 +1,4 @@
+
 import { Wifi, Globe, Cloud, Database, Server, Users, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -65,8 +66,8 @@ export function Services() {
 
   return (
     <section id="servicos" className="relative py-20 bg-gray-50 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="fiber-lines"></div>
+      <div className="absolute inset-0">
+        <div className="neural-network"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -89,7 +90,7 @@ export function Services() {
                 {category.items.map((service, serviceIdx) => (
                   <div
                     key={serviceIdx}
-                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+                    className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
                   >
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                       <service.icon className="w-6 h-6 text-primary" />
