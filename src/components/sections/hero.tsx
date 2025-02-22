@@ -24,6 +24,21 @@ export function Hero() {
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1744&auto=format&fit=crop"
     },
     {
+      title: "Link de Internet Temporário",
+      description: "Soluções de conectividade para eventos com diversas opções: Rádio, Fibra Ótica, Mochilink 5G e Starlink",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
+      title: "Serviço de Backup em Nuvem",
+      description: "Proteção de dados em dois Data Centers nacionais",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
+      title: "Locação de Equipamentos",
+      description: "Tablets, notebooks, impressoras, painéis LED e geradores para seus eventos",
+      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
       title: "Soluções Empresariais",
       description: "Infraestrutura completa para sua empresa",
       image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1740&auto=format&fit=crop"
