@@ -60,10 +60,8 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center bg-hero-gradient overflow-hidden">
-      {/* Background effects */}
+      {/* Background effect */}
       <div className="absolute inset-0">
-        <div className="fiber-lines" />
-        <div className="network-lines" />
         <div className="absolute w-full h-1/2 bg-gradient-to-b from-neon-blue/10 to-transparent" />
       </div>
       
